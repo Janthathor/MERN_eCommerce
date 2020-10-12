@@ -1,14 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {
-	Row,
-	Col,
-	Image,
-	ListGroup,
-	Card,
-	Button,
-	ListGroupItem,
-} from 'react-bootstrap'
+import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import products from '../products'
 
@@ -66,7 +58,7 @@ const ProductScreen = ({ match }) => {
 								<Button
 									className='btn-block'
 									type='button'
-									disabled={product.countInStock == 0}
+									disabled={product.countInStock === 0}
 								>
 									Add To Cart
 								</Button>
